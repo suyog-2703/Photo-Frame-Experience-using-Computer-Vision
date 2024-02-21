@@ -1,0 +1,6 @@
+<!-- App1/templates/registration_form.html -->
+<form method="post" action="{% url 'registration_view' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
+</form>

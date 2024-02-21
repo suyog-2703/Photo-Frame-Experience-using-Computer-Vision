@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Registration
+        </title>
+    </head>
+    <body>
+        <form action="{% url 'register' %}" method="POST">
+            {% csrf_token %}
+
+            First Name:<input type="text" name="first_name"><br>
+            Last_Name:<input type="text" name="last_name"><br>
+            User_Name:<input type="text" name="user_name"><br>
+            Email:<input type="email" name="email"><br>
+            Password:<input type="password" name="password1"><br>
+            Confirm password:<input type="password" name="password2"><br>
+            <input type="submit" name="submit"><br>
+        </form>
+    </body>
+</html>
